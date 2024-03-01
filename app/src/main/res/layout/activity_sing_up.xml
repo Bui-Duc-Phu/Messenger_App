@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.SingUpActivity">
+
+   <TextView
+       android:id="@+id/tiltle"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Sing Up"
+       android:textSize="40dp"
+       android:layout_marginStart="30dp"
+       android:textStyle="bold"
+       android:textColor="@color/black"
+       android:layout_marginTop="90dp"/>
+   <com.google.android.material.textfield.TextInputLayout
+       android:layout_marginTop="20dp"
+       android:layout_below="@id/tiltle"
+       android:id="@+id/nameTil"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="30dp"
+       android:layout_marginEnd="30dp"
+       app:hintEnabled="false">
+       <EditText
+           android:id="@+id/nameEdt"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="20dp"
+           android:hint="Enter name"/>
+   </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10sp"
+        android:id="@+id/emailTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@id/nameTil"
+        app:hintEnabled="false">
+        <EditText
+            android:id="@+id/emailEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:hint="Enter email"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10sp"
+        android:id="@+id/passwordTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@id/emailTil"
+        app:hintEnabled="false">
+        <EditText
+            android:id="@+id/passwordEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:hint="Password"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10sp"
+        android:id="@+id/confirmPassTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@id/passwordTil"
+        app:hintEnabled="false">
+        <EditText
+            android:id="@+id/confirmPassEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:hint="Confirm password"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/SingupBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/confirmPassTil"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        app:backgroundTint="@null"
+        android:background="@color/button_blue"
+        android:text="Sing Up"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SingupBtn"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="28dp"
+        app:backgroundTint="@null"
+        android:background="@color/button_black"
+        android:text="Login"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginEnd="5sp"
+        android:layout_marginBottom="5sp"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo" />
+
+
+</RelativeLayout>
